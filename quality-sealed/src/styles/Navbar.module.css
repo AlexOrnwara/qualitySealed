@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    height: 100px;
+
+    font-family: 'HK Grotesk';
+    font-size: 1vw;
+    font-weight: 100;
+    color: #F1E3C9;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    position: absolute;
+    padding: 2rem 5rem;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.a {
+    margin-right: 2rem;
+}
