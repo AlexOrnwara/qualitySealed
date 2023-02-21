@@ -1,24 +1,59 @@
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 100vh;
-    /* background-color: black; */
+@media only screen and (max-width: 767px) {
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100vh;
+        /* background-color: black; */
+    }
+
+    .section h1 {
+        font-family: 'Dream Avenue';
+        font-size: 7rem;
+        font-weight: 100;
+        font-kerning: auto;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .section p {
+        font-family: 'HK Grotesk';
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #FFFFFF;
+    }
 }
 
-.section h1 {
-    font-family: 'Dream Avenue';
-    font-size: 7rem;
-    font-weight: 100;
-    font-kerning: auto;
-    text-transform: uppercase;
-    color: #FFFFFF;
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Insert your tablet CSS in here!*/
 }
 
-.section p {
-    font-family: 'HK Grotesk';
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: #FFFFFF;
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .h1 {
+        font-family: 'Dream Avenue';
+        font-size: 3rem;
+        font-weight: 100;
+        font-kerning: auto;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .p {
+        font-family: 'HK Grotesk';
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #FFFFFF;
+    }
 }

@@ -1,15 +1,15 @@
 import * as React from 'react';
-
+import styles from '@/styles/Landing.module.css'
 export default function Landing(props) {
     const {imagePath, title, description} = props;
 
     const landing = {
         display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'flex-start',
+        justifyItems: 'center',
+        alignItems: 'center',
         flexDirection: 'column',
         height: '100vh',
-        width: '100vw',
+        width: '100%',
         padding: '5rem',
         backgroundImage: 'url(' + imagePath + ')',
         backgroundRepeat: 'no-repeat',
@@ -20,7 +20,7 @@ export default function Landing(props) {
     
     const h1 = {
         fontFamily: 'Dream Avenue',
-        fontSize: '12.5vw',
+        fontSize: '450%',
         fontWeight: '100',
         fontKerning: 'auto',
         textTransform: 'uppercase',
@@ -32,7 +32,7 @@ export default function Landing(props) {
     
     const p = {
         fontFamily: 'HK Grotesk',
-        fontSize: '2vw',
+        fontSize: '200%',
         fontWeight: '100',
         color: '#FFFFFF'
     }

@@ -10,7 +10,7 @@ export default function Section(props) {
         justifyContent: 'center',
         alignItems: 'stretch',
         flexDirection: 'column',
-        height: '100vh',
+        minHeight: '100vh',
         width: '100vw',
         padding: '3rem 7.5rem',
         backgroundImage: 'url(' + imagePath + ')',
@@ -22,7 +22,7 @@ export default function Section(props) {
     
     const h1 = {
         fontFamily: 'Dream Avenue',
-        fontSize: '5vw',
+        fontSize: '10vw',
         fontWeight: '100',
         fontKerning: 'auto',
         textTransform: 'uppercase',
@@ -33,7 +33,7 @@ export default function Section(props) {
     const p = {
         fontFamily: 'HK Grotesk',
         fontStyle: 'light',
-        fontSize: '1vw',
+        fontSize: '1rem',
         fontWeight: '100',
         lineHeight: '2',
         color: '#FFFFFF'
@@ -41,7 +41,7 @@ export default function Section(props) {
 
     const italic = {
         fontFamily: 'HK Grotesk',
-        fontSize: '1vw',
+        fontSize: '1rem',
         fontWeight: '100',
         lineHeight: '2',
         color: '#FFFFFF',
