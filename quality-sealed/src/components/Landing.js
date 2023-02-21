@@ -5,11 +5,11 @@ export default function Landing(props) {
 
     const landing = {
         display: 'flex',
-        justifyItems: 'center',
-        alignItems: 'center',
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
         flexDirection: 'column',
         height: '100vh',
-        width: '100%',
+        width: '100vw',
         padding: '5rem',
         backgroundImage: 'url(' + imagePath + ')',
         backgroundRepeat: 'no-repeat',
@@ -17,10 +17,10 @@ export default function Landing(props) {
         textAlign: 'left',
         borderBottom: '1px solid #FFFFFF'
     }
-    
+
     const h1 = {
         fontFamily: 'Dream Avenue',
-        fontSize: '450%',
+        fontSize: '12.5vw',
         fontWeight: '100',
         fontKerning: 'auto',
         textTransform: 'uppercase',
@@ -29,10 +29,10 @@ export default function Landing(props) {
         marginTop: '7.5vh',
         marginBottom: '5vh'
     }
-    
+
     const p = {
         fontFamily: 'HK Grotesk',
-        fontSize: '200%',
+        fontSize: '2vw',
         fontWeight: '100',
         color: '#FFFFFF'
     }

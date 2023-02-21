@@ -1,28 +1,3 @@
-.h1 {
-    color: #FFFFFF;
-    font-family: Dream Avenue;
-    font-size: 5rem;
-    font-weight: 100;
-    font-kerning: auto;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: 100vw;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.p {
-    color: #FFFFFF;
-    font-family: HK Grotesk;
-    font-size: 1.25rem;
-    font-weight: 100;
-    line-height: 3rem;
-    color: #FFFFFF;
-    width: 100vw;
-    text-align: center;
-}
-
 .container {
     width:100vw;
     height: fit-content;
