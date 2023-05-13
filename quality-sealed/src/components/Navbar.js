@@ -18,11 +18,11 @@ export default function Landing() {
                 />
                 </a>
             </div>
-            <div className = {styles.container}>
+            <div className = {styles.linksContainer}>
                 <Link href = "/articles/about" style = {{textDecoration: "none"}}><p className = {styles.a}>About Us</p></Link>
                 <Link href = "/articles/qualifications" style = {{textDecoration: "none"}}><p className = {styles.a} style = {{textDecoration: "none !important"}}>Qualifications</p></Link>
                 <Link href = "/articles/products" style = {{textDecoration: "none"}}><p className = {styles.a}>Products</p></Link>
-                <Link href = "" style = {{textDecoration: "none"}}><p className = {styles.a}>Testimonials</p></Link>
+                {/* <Link href = "" style = {{textDecoration: "none"}}><p className = {styles.a}>Testimonials</p></Link> */}
                 <Link href = "" style = {{textDecoration: "none"}}><p className = {styles.a}>Contact Us</p></Link>
             </div>
         </div>

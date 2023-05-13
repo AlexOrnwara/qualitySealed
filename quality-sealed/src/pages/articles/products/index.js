@@ -4,11 +4,28 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import ProductDescription_Right_Large from '@/components/ProductDescription.js'
+import ProductCategorySlide from '@/components/ProductCategorySlide.js'
+import HScroll from '@/components/HorizontalScroll.js'
 
 import styles from '@/styles/Home.module.css'
+import carouselStyles from '@/styles/Carousel.module.scss'
 import productStyle from '@/styles/Product.module.css'
 
+import { Products } from "@/data/dummyProductsData.json"
+
+import Carousel from 'react-bootstrap/Carousel';
+
+let productArray = 
+[
+  ["Trays", "/articles/products/trays", "/images/sampleImage1.png"], 
+  ["Films", "/articles/products/films", "/images/sampleImage2.png"], 
+  ["Absorbent Pads", "/articles/products/absorbent-pad", "/images/sampleImage3.png"], 
+  ["Vacuum Bags", "/articles/products/vacuum-bag", "/images/sampleImage4.png"]
+]
+
 export default function Home() {
+    let imageArray = []
+    Products.map((product) => imageArray.push(product["imagePath"]))
 
     return (
     <>
@@ -17,27 +34,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>
-        <div className = {productStyle.align_left}>
-            <div className = {productStyle.column}>
-                <div className = {productStyle.image_small}>
-                    <Image 
-                        src = "/../public/images/certificate.png" 
-                        width = {200} 
-                        height = {200} 
-                        alt = "Sample Image 1"
-                        layout = "responsive"
-                    /> 
-                </div>
-                
-                <div className = {productStyle.row}>
-                    <h1 className = {productStyle.h2}>Product A</h1>
-                    <h3 className = {productStyle.h3}>$15</h3>
-                </div>
-                
-                <p className = {productStyle.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum vehicula finibus. Morbi lectus felis, consequat quis nulla et, rutrum volutpat leo. Quisque ultrices hendrerit iaculis. Aenean ac mauris enim. Nunc condimentum erat non viverra congue. In dictum pretium massa quis congue. Vivamus eget tellus dictum, viverra nulla id, congue lacus. Curabitur lorem ex, ultricies eu risus in, tincidunt efficitur dolor. Morbi mattis quam scelerisque quam sagittis, nec convallis neque hendrerit. Sed fermentum at magna viverra tristique. Ut sagittis orci gravida augue imperdiet dignissim. Proin bibendum commodo vestibulum. In vel urna id est mattis imperdiet eget non enim. Fusce in ullamcorper lorem, in fringilla nunc. Suspendisse vestibulum est in neque euismod fringilla. Integer dapibus dui sit amet hendrerit rutrum. Suspendisse mollis sed lectus a sodales. Phasellus non justo eget nisl consectetur maximus quis in libero. Curabitur et ultrices erat, eu aliquam quam. Sed suscipit at purus sed hendrerit.</p>
-            </div>
-        </div>
-      
+        <Carousel>
+          {productArray.map((product) => {
+            return (
+              <Carousel.Item className = {carouselStyles.item} style = {{backgroundImage: `url(${String(product[2])})`}}>
+                <ProductCategorySlide
+                  categoryName = {product[0]}
+                  navLink = {product[1]}
+                />
+              </Carousel.Item>
+            )
+          })}
+        </Carousel>
       </main>
     </>
   )

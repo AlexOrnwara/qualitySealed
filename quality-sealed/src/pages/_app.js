@@ -1,7 +1,9 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
 import Navbar from '@/components/Navbar.js'
 import NavbarHome from '@/components/NavbarHome.js'
 import { useRouter } from 'next/router'
+import { window, document, exists } from 'browser-monads';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

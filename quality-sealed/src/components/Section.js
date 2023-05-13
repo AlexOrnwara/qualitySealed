@@ -33,7 +33,7 @@ export default function Section(props) {
     const p = {
         fontFamily: 'HK Grotesk',
         fontStyle: 'light',
-        fontSize: '1rem',
+        fontSize: '1.5rem',
         fontWeight: '100',
         lineHeight: '2',
         color: '#FFFFFF'
@@ -41,7 +41,7 @@ export default function Section(props) {
 
     const italic = {
         fontFamily: 'HK Grotesk',
-        fontSize: '1rem',
+        fontSize: '1.5rem',
         fontWeight: '100',
         lineHeight: '2',
         color: '#FFFFFF',
@@ -62,7 +62,7 @@ export default function Section(props) {
             <br/>
             <br/>
             <div style = {row}>
-                <Link href = "" style = {{marginRight: "1rem"}}>
+                <Link href = "" style = {{marginRight: "1rem", textDecoration: "none"}}>
                     <p style = {italic}>
                         Continue reading
                     </p>

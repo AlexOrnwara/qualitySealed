@@ -1,0 +1,130 @@
+.item {
+    // display: flex;
+    height: 100% !important;
+    width: 100%;
+    padding: 10%;
+}
+
+.card {
+    display: flex !important;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    top: 50%;
+}
+
+.quoteLink {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #F6F6F6;
+}
+
+.getQuoteButton {
+    display: flex;
+    place-items: center;
+}
+
+.productTitle {
+    font-family: 'Times';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    
+    color: #F1E3C9;
+}
+
+.skuSubtitle {
+    font-family: 'HK Grotesk';
+    font-weight: 100;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.productDescription {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.modal {
+    border-radius: 25px !important;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.emailModalHeader {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    
+    color: var(--main-accent);
+}
+
+.emailModalDescription {
+    font-family: 'Montserrat Thin';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    width: 25rem;
+
+    text-align: center;
+
+    color: var(--dark-green);
+}
+
+.emailModalAddress {
+    font-family: 'Montserrat Thin';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    
+    color: var(--dark-green);
+}
+
+.emailModalBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.emailModalInput {
+    width: 17.5rem;
+    height: 3rem;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    background-color: #F3f3f3;
+    padding-left: 7.5%;
+}
+
+.emailModalSubmit {
+    width: 7.5rem;
+    height: 3rem;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--main-accent);
+
+    color: white;
+    font-family: "Montserrat Thin";
+    font-weight: bold;
+    text-transform: uppercase;
+}

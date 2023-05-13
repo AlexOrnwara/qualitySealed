@@ -2,7 +2,7 @@
     width:100vw;
     height: fit-content;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;

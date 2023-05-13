@@ -23,6 +23,7 @@ export default function Home() {
       <main className={styles.main}>
             <h1 className = {styles.h1}>Qualifications</h1>
             <HScroll imageArray = {imageArray} />
+            
             <p className = {styles.p}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum vehicula finibus. Morbi lectus felis, consequat quis nulla et, rutrum volutpat leo. Quisque ultrices hendrerit iaculis. Aenean ac mauris enim. Nunc condimentum erat non viverra congue. In dictum pretium massa quis congue. Vivamus eget tellus dictum, viverra nulla id, congue lacus. Curabitur lorem ex, ultricies eu risus in, tincidunt efficitur dolor. 
                 <br /><br />

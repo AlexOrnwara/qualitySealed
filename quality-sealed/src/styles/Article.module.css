@@ -28,7 +28,8 @@
     flex-wrap: wrap;
     justify-content: center !important;
     align-content: flex-start;
-    width: 100vw;
+    min-width: 100vw;
     padding: 0 8rem;
     background-color: #284035;
-  }
+    min-height: 100vh;
+}
