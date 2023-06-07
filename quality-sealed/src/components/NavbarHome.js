@@ -1,8 +1,7 @@
 import * as React from 'react';
-import styles from '@/styles/NavbarHome.module.css';
+import styles from '@/styles/NavbarHome.module.scss';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { document } from 'browser-monads';
 
 export default function Landing() {
@@ -10,11 +9,10 @@ export default function Landing() {
         <div className = {styles.container}>
             <div>
                 <a href = "/">
-                <Image
+                <img
                     src = "/images/navbar_logo.svg"
                     alt = "logo"
-                    width = {120}
-                    height = {80}
+                    className = {styles.logo}
                 />
                 </a>
             </div>

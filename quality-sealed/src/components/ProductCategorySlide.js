@@ -9,8 +9,7 @@ export default function ProductCategorySlide(props) {
 
     return (
         <>
-            <div className = {styles.card}>       
-                <div style = {{width: "33%"}}></div>
+            <div className = {styles.card}>
                 <h1 className = {styles.h1}>{categoryName}</h1>
                 <Link href = {navLink} style = {{display: "flex", placeContent: "center", textDecoration: "none"}}>
                     <Button type = "button" className = "btn btn-view-more">View All</Button>

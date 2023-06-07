@@ -7,8 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ProductShowcase(props) {
-    const {email, handleSubmit} = useForm();
-    const {categoryName, navLink, sku} = props;
+    const {name, navLink, sku, description, img_source} = props;
     const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);
@@ -18,20 +17,20 @@ export default function ProductShowcase(props) {
         <>
             <div>       
                 <card className = {styles.card}>
-                    <div style = {{margin: "0rem 3rem 0rem 1rem"}}>
+                    <div>
                         <img 
-                            src = "/images/sampleImage1.png"
-                            width = "250"
-                            height = "250"
+                            src = {img_source}
+                            alt = "Product Image"
+                            className = "responsiveImage" 
                         />
                     </div>
-                    <description>
+                    <description className = {styles.description}>
                         <div>
-                            <h1 className = {styles.productTitle}>Product Name</h1>
+                            <h1 className = {styles.productTitle}>{name}</h1>
                             <h2 className = {styles.skuSubtitle}>SKU: {sku}</h2>
                         </div>
                         <div>
-                            <p className = {styles.productDescription}>A classic food tray made with eco-friendly processes and materials is a sustainable alternative to traditional plastic trays, reducing environmental impact without compromising on functionality.</p>
+                            <p className = {styles.productDescription}>{description}</p>
                         </div>
                         <div>
                             <Button type = "button" className = "btn btn-get-quote" onClick={handleShow}>Request for a quote</Button>
@@ -52,14 +51,14 @@ export default function ProductShowcase(props) {
                         Drop us an email regarding the products you are interested in and we will get back to you soon!
                     </h2>
                     <h3 className = {styles.emailModalAddress}>sales@qualitysealed.com</h3>
-                    <h2 className = {styles.emailModalDescription}>
-                        OR leave us your email and we’ll get reach out to you.
+                    {/* <h2 className = {styles.emailModalDescription}>
+                        OR leave us your email and we will reach out to you.
                     </h2>
                     <br/>
                     <div className = {styles.emailModalAddress}>
                         <input type = "text" placeholder = "Email address" className = {styles.emailModalInput}/>
                         <input type = "submit" value = "Submit" className = {styles.emailModalSubmit}/>
-                    </div>
+                    </div> */}
                 </Modal.Body>
             </Modal>
         </>

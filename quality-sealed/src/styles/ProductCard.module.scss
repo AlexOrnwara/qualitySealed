@@ -5,12 +5,226 @@
     padding: 10%;
 }
 
-.card {
-    display: flex !important;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    top: 50%;
+@media only screen and (max-width: 600px){ //Phone
+    .card {
+        display: flex !important;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .modal {
+        border-radius: 25px !important;
+        top: 35vh;
+        height: 50vh;
+    }
+
+    .modalBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+        padding: 5%;
+    }
+
+    .emailModalAddress {
+        font-family: 'Montserrat Thin';
+        font-style: italic;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 150%;
+        text-align: center;
+        
+        color: var(--dark-green);
+    }
+
+    .emailModalHeader {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 53px;
+        text-align: center;
+        
+        color: var(--main-accent);
+    }
+    
+    .emailModalDescription {
+        font-family: 'Montserrat Thin';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        width: 20rem;
+    
+        text-align: center;
+    
+        color: var(--dark-green);
+    }
+
+    .emailModalInput {
+        width: 13.5rem;
+        height: 3rem;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 10px 0 0 10px;
+        background-color: #F3f3f3;
+        padding-left: 7.5%;
+    }
+
+    .emailModalSubmit {
+        width: 5.5rem;
+        height: 3rem;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--main-accent);
+
+        color: white;
+        font-family: "Montserrat Thin";
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .productTitle {
+        font-family: 'Times';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 41px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: #F1E3C9;
+    }
+    
+    .skuSubtitle {
+        font-family: 'HK Grotesk';
+        font-weight: 100;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+    .description {
+        padding: 5%;
+    }
+    .productDescription {
+        font-family: 'HK Grotesk';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (min-width: 600px){ //PC and Tablet
+    .card {
+        display: flex !important;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        top: 50%;
+    }
+
+
+    .modal {
+        border-radius: 25px !important;
+        top: 25vh;
+    }
+
+    .modalBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .emailModalAddress {
+        font-family: 'Montserrat Thin';
+        font-style: italic;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        
+        color: var(--dark-green);
+    }
+
+    .emailModalHeader {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 53px;
+        text-align: center;
+        
+        color: var(--main-accent);
+    }
+    
+    .emailModalDescription {
+        font-family: 'Montserrat Thin';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 150%;
+        width: 25rem;
+    
+        text-align: center;
+    
+        color: var(--dark-green);
+    }
+
+    .emailModalInput {
+        width: 17.5rem;
+        height: 3rem;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 10px 0 0 10px;
+        background-color: #F3f3f3;
+        padding-left: 7.5%;
+    }
+
+    .emailModalSubmit {
+        width: 7.5rem;
+        height: 3rem;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--main-accent);
+
+        color: white;
+        font-family: "Montserrat Thin";
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .productTitle {
+        font-family: 'Times';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 41px;
+        
+        color: #F1E3C9;
+    }
+    
+    .skuSubtitle {
+        font-family: 'HK Grotesk';
+        font-weight: 100;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+    .description {
+        padding: 5%;
+    }
+    .productDescription {
+        font-family: 'HK Grotesk';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
 }
 
 .quoteLink {
@@ -28,103 +242,11 @@
     place-items: center;
 }
 
-.productTitle {
-    font-family: 'Times';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 41px;
-    
-    color: #F1E3C9;
-}
-
-.skuSubtitle {
-    font-family: 'HK Grotesk';
-    font-weight: 100;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
-.productDescription {
-    font-family: 'HK Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 150%;
-    color: #FFFFFF;
-}
-
-.modal {
-    border-radius: 25px !important;
-}
-
-.modalBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10%;
-}
-
-.emailModalHeader {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    text-align: center;
-    
-    color: var(--main-accent);
-}
-
-.emailModalDescription {
-    font-family: 'Montserrat Thin';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 150%;
-    width: 25rem;
-
-    text-align: center;
-
-    color: var(--dark-green);
-}
-
-.emailModalAddress {
-    font-family: 'Montserrat Thin';
-    font-style: italic;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 150%;
-    text-align: center;
-    
-    color: var(--dark-green);
+.pictureFrame {
+    border-radius: 10px;
 }
 
 .emailModalBox {
     display: flex;
     flex-direction: row;
-}
-
-.emailModalInput {
-    width: 17.5rem;
-    height: 3rem;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 10px 0 0 10px;
-    background-color: #F3f3f3;
-    padding-left: 7.5%;
-}
-
-.emailModalSubmit {
-    width: 7.5rem;
-    height: 3rem;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 0 10px 10px 0;
-    background-color: var(--main-accent);
-
-    color: white;
-    font-family: "Montserrat Thin";
-    font-weight: bold;
-    text-transform: uppercase;
 }

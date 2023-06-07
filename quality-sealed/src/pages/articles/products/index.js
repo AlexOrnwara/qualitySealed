@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -9,7 +7,6 @@ import HScroll from '@/components/HorizontalScroll.js'
 
 import styles from '@/styles/Home.module.css'
 import carouselStyles from '@/styles/Carousel.module.scss'
-import productStyle from '@/styles/Product.module.css'
 
 import { Products } from "@/data/dummyProductsData.json"
 
@@ -24,8 +21,8 @@ let productArray =
 ]
 
 export default function Home() {
-    let imageArray = []
-    Products.map((product) => imageArray.push(product["imagePath"]))
+    // let imageArray = []
+    // Products.map((product) => imageArray.push(product["imagePath"]))
 
     return (
     <>
@@ -33,14 +30,19 @@ export default function Home() {
         <title>About QS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.card}>
         <Carousel>
           {productArray.map((product) => {
             return (
-              <Carousel.Item className = {carouselStyles.item} style = {{backgroundImage: `url(${String(product[2])})`}}>
+              <Carousel.Item className = {carouselStyles.item}>
                 <ProductCategorySlide
                   categoryName = {product[0]}
                   navLink = {product[1]}
+                />
+                <img
+                  src = {String(product[2])}
+                  alt = "First slide"
+                  className = {carouselStyles.image}
                 />
               </Carousel.Item>
             )

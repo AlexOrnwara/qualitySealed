@@ -87,6 +87,12 @@ Button, .btn, a {
   background-color: #44765F !important;
   border-radius: 30px !important;
   color: #FFFFFF !important;
-  width: 10rem;
-  font-size: 10px !important;
+  width: 15rem;
+  font-size: 1rem !important;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

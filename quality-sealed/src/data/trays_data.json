@@ -1,0 +1,24 @@
+{ "Trays": [
+    {
+        "_id": "001",
+        "name": "Classic Tray",
+        "navlink": "/articles/products",
+        "sku": 1230,
+        "description": "A classic tray with a classic look.",
+        "imagePath": "/images/sampleImage1.png"
+    },
+    {
+        "_id": "002",
+        "name": "Trendy Tray",
+        "sku": 1230,
+        "description": "A trendy tray with a classic look.",
+        "imagePath": "/images/sampleImage2.png"
+    },
+    {
+        "_id": "003",
+        "name": "Glam Tray",
+        "sku": 1230,
+        "description": "A Glam tray with a classic look.",
+        "imagePath": "/images/sampleImage3.png"
+    }
+]}
