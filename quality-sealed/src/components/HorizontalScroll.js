@@ -1,5 +1,4 @@
-import styles from '@/styles/Qualification.module.css'
-import Image from 'next/image'
+import styles from '@/styles/Qualification.module.scss'
 
 export default function HorizontalScroll(props) {
     const { imageArray } = props;
@@ -8,12 +7,10 @@ export default function HorizontalScroll(props) {
         <>
             <section className = {styles.container}>
                 {imageArray.map((image) => (
-                    <Image
+                    <img
                         src = {image}
                         alt = {String(image)}
-                        width = {200}
-                        height = {200}
-                        className = {styles.certificate}
+                        className = {styles.test_certificate}
                     />
                 ))}
             </section>

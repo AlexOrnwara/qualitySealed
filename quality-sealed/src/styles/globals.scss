@@ -80,7 +80,7 @@ Button, .btn, a {
   background-color: #FFFFFF !important;
   border-radius: 30px !important;
   color: #284035 !important;
-  width: 10rem;
+  width: 15rem;
 }
 
 .btn-get-quote {
@@ -92,7 +92,10 @@ Button, .btn, a {
 }
 
 .responsiveImage {
-  width: 100%;
+  width: 50%;
   height: auto;
-  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  background-color: #FFFFFF;
+  border-radius: 5%;
 }

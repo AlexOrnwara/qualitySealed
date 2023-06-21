@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import styles from '@/styles/Home.module.css'
+import landingStyle from '@/styles/Landing.module.css'
+
 import Landing from '../components/Landing.js'
 import Section from '../components/Section.js'
 import Navbar from '../components/Navbar.js'
@@ -19,7 +21,7 @@ export default function Home() {
           <Landing
             imagePath = "/images/sampleImage1.png"
             title = "Quality Sealed"
-            description = "Eco-friendly packaging"
+            description = "Producer and pioneer"
           />
           {Sections.map((section) => (
             <Section

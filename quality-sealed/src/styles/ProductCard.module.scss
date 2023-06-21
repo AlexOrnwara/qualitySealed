@@ -87,33 +87,46 @@
     }
 
     .productTitle {
-        font-family: 'Times';
+        font-family: HK Grotesk;
         font-style: normal;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 3rem;
         line-height: 41px;
         margin-top: 5%;
         margin-bottom: 5%;
         color: #F1E3C9;
+        width: 100vw;
     }
     
     .skuSubtitle {
         font-family: 'HK Grotesk';
         font-weight: 100;
-        font-size: 20px;
+        font-size: 1rem;
         color: #FFFFFF;
     }
     
     .description {
-        padding: 5%;
+        padding: 2.5%;
     }
     .productDescription {
         font-family: 'HK Grotesk';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 1.5rem;
         line-height: 150%;
         color: #FFFFFF;
+    }
+
+    .buttonLayout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }
 
@@ -125,8 +138,7 @@
         justify-content: flex-start;
         top: 50%;
     }
-
-
+    
     .modal {
         border-radius: 25px !important;
         top: 25vh;
@@ -198,11 +210,13 @@
         text-transform: uppercase;
     }
     .productTitle {
-        font-family: 'Times';
+        font-family: HK Grotesk;
         font-style: normal;
         font-weight: 400;
         font-size: 3rem;
-        line-height: 41px;
+        line-height: 1rem;
+        width: 80vw;
+        line-height: 1.5rem;
         
         color: #F1E3C9;
     }
@@ -221,9 +235,26 @@
         font-family: 'HK Grotesk';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 1.5rem;
         line-height: 150%;
         color: #FFFFFF;
+        width: 30vw;
+    }
+
+    .buttonLayout{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .image {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
     }
 }
 
@@ -231,15 +262,17 @@
     font-family: 'HK Grotesk';
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 18px;
     text-align: center;
     color: #F6F6F6;
 }
 
-.getQuoteButton {
+.button {
     display: flex;
     place-items: center;
+    text-decoration: none;
+    width: 20vw;
 }
 
 .pictureFrame {

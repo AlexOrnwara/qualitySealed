@@ -17,13 +17,10 @@ let productArray =
   ["Trays", "/articles/products/trays", "/images/sampleImage1.png"], 
   ["Films", "/articles/products/films", "/images/sampleImage2.png"], 
   ["Absorbent Pads", "/articles/products/absorbent-pad", "/images/sampleImage3.png"], 
-  ["Vacuum Bags", "/articles/products/vacuum-bag", "/images/sampleImage4.png"]
+  ["Vacuum Bags", "/articles/products/vsp", "/images/sampleImage4.png"]
 ]
 
 export default function Home() {
-    // let imageArray = []
-    // Products.map((product) => imageArray.push(product["imagePath"]))
-
     return (
     <>
       <Head>

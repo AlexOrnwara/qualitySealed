@@ -15,7 +15,18 @@
 
     .h1 {
         font-family: Dream Avenue;
-        font-size: 5rem;
+        font-size: 3rem;
+        font-weight: 100;
+        font-kerning: auto;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .h2 {
+        font-family: HK Grotesk;
+        font-size: 1rem;
         font-weight: 100;
         font-kerning: auto;
         text-transform: uppercase;
@@ -33,6 +44,8 @@
         color: #FFFFFF;
         text-align: left;
         margin-left: 1rem;
+        opacity: 50%;
+        text-shadow: #000;
     }
 }
 
@@ -52,15 +65,28 @@
 
     .h1 {
         font-family: Dream Avenue;
-        font-size: 10rem;
+        font-size: 9rem;
         font-weight: 100;
         font-kerning: auto;
         text-transform: uppercase;
         color: #FFFFFF;
-        width: 50vw;
+        width: 50rem;
         margin-left: 10vw;
         text-align: left;
     }
+
+    .h2 {
+        font-family: HK Grotesk;
+        font-size: 3rem;
+        font-weight: light !important;
+        font-kerning: auto;
+        text-transform: lowercase;
+        color: #FFFFFF;
+        width: 95vw;
+        margin-left: 10vw;
+        text-align: left;
+    }
+
 
     .p {
         font-family: HK Grotesk;
@@ -71,5 +97,6 @@
         color: #FFFFFF;
         margin-left: 10vw;
         text-align: left;
+        text-shadow: #000;
     }
 }

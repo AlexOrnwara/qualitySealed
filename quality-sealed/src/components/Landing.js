@@ -8,8 +8,9 @@ export default function Landing(props) {
     return (
         <>
             <div className = {styles.landing} style = {{backgroundImage: `url(${imagePath})`}}>
-                <h1 className = {styles.h1}>{title}</h1>
-                <p className = {styles.p}>{description}</p>
+                <i className = {styles.p}>{title}</i>
+                <h1 className = {styles.h1}>{description}</h1>
+                <h2 className = {styles.h2}>of thermoformed food packaging solutions</h2>
             </div>
         </>
     )
