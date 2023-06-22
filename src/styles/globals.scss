@@ -1,0 +1,101 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  font-family: 'Dream Avenue';
+
+  --light-green: #44765F;
+  --dark-green: #284035;
+  --text-light: #F1E3C9;
+
+  --main-background: var(--dark-green);
+  --main-text: var(--text-light);
+  --main-accent: var(--light-green);
+
+  --carousel-control-icon-width: 4rem;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("@/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype"),
+  local("@/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat Thin";
+  src: local("Montserrat-VariableFont_wght"), format("truetype"),
+  local("Montserrat-Italic-VariableFont_wght"), format("truetype");
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+Carousel carousel-control-prev-icon {
+  display: inline-block;
+  width: 4rem !important;
+  height: 4rem !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+Carousel carousel-control-next-icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+Link .a {
+  color: #F1E3C9;
+}
+
+Button, .btn, a {
+  border: none !important;
+}
+
+.btn-view-more {
+  margin: 3rem;
+  width: 50%;
+  height: 3rem;
+  border-radius: 30px;
+  border: 1px solid var(--main-text);
+
+  background-color: var(--main-text) !important;
+  color: var(--main-background) !important;
+}
+
+.btn-back {
+  background-color: #FFFFFF !important;
+  border-radius: 30px !important;
+  color: #284035 !important;
+  width: 15rem;
+}
+
+.btn-get-quote {
+  background-color: #44765F !important;
+  border-radius: 30px !important;
+  color: #FFFFFF !important;
+  width: 15rem;
+  font-size: 1rem !important;
+}
+
+.responsiveImage {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  background-color: #FFFFFF;
+  border-radius: 5%;
+}

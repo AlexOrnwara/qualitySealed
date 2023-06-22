@@ -1,2 +1,0 @@
-admin:Qf0nXsu4no0yta3X
-mongodb+srv://admin:Qf0nXsu4no0yta3X@qualitysealed.5tiisc4.mongodb.net/

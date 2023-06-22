@@ -1,0 +1,10 @@
+{ "Pad": [
+    {
+        "_id": "001",
+        "name": "Absorbent Pad",
+        "navlink": "/articles/products",
+        "sku": 1230,
+        "description": "Able to absorb up to 70ml of liquids",
+        "imagePath": "/images/sampleImage1.png"
+    }
+]}

@@ -1,0 +1,27 @@
+import * as React from 'react';
+import styles from '@/styles/Navbar.module.scss';
+
+import Link from 'next/link';
+
+export default function Landing() {
+    return (
+        <div className = {styles.container}>
+            <div>
+                <a href = "/">
+                <img
+                    src = "/images/navbar_logo.svg"
+                    alt = "logo"
+                    className = {styles.logo}
+                />
+                </a>
+            </div>
+            <div className = {styles.linksContainer}>
+                <Link href = "/articles/about" style = {{textDecoration: "none"}}><p className = {styles.a}>Our Aim</p></Link>
+                <Link href = "/articles/qualifications" style = {{textDecoration: "none"}}><p className = {styles.a} style = {{textDecoration: "none !important"}}>Qualifications</p></Link>
+                <Link href = "/articles/products" style = {{textDecoration: "none"}}><p className = {styles.a}>Products</p></Link>
+                {/* <Link href = "" style = {{textDecoration: "none"}}><p className = {styles.a}>Testimonials</p></Link> */}
+                {/* <Link href = "" style = {{textDecoration: "none"}}><p className = {styles.a}>Contact Us</p></Link> */}
+            </div>
+        </div>
+    )
+}
