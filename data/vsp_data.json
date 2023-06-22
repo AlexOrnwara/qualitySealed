@@ -1,0 +1,24 @@
+{ "VSP": [
+    {
+        "_id": "001",
+        "name": "Vacuum Pack (Small)",
+        "navlink": "/articles/products",
+        "sku": 1230,
+        "description": "200 x 300 mm x 80 um (um = micron) Highly elastic, protection from sharp surfaces, reduce ice formation",
+        "imagePath": "/images/sampleImage1.png"
+    },
+    {
+        "_id": "002",
+        "name": "Vacuum Pack (Medium)",
+        "sku": 1230,
+        "description": "220 x 300 mm x 80 um (um = micron) Highly elastic, protection from sharp surfaces, reduce ice formation",
+        "imagePath": "/images/sampleImage2.png"
+    },
+    {
+        "_id": "003",
+        "name": "Vacuum Pack (Large)",
+        "sku": 1230,
+        "description": "255 x 300 mm x 80 um (um = micron) Highly elastic, protection from sharp surfaces, reduce ice formation",
+        "imagePath": "/images/sampleImage3.png"
+    }
+]}
